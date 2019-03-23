@@ -1,1 +1,12 @@
 // Mixins Here
+
+.generic-text {
+    font-size: 1.6rem;
+    line-height: 1.4;
+}
+
+.nav-anchor-text {
+    .generic-text();
+    text-decoration: none;
+    color: @main-font-color;
+}

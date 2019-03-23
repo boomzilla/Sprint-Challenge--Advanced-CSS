@@ -1,3 +1,13 @@
+.generic-text {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.nav-anchor-text {
+  font-size: 1.6rem;
+  line-height: 1.4;
+  text-decoration: none;
+  color: #5E6164;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -166,6 +176,15 @@ p {
 h1 {
   text-align: center;
   padding: 15px;
+}
+nav a:link,
+nav a:visited,
+nav a:hover,
+nav a:active {
+  font-size: 1.6rem;
+  line-height: 1.4;
+  text-decoration: none;
+  color: #5E6164;
 }
 footer {
   color: #22283B;
