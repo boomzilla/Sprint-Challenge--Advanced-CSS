@@ -25,6 +25,16 @@
       border-radius: 20px;
       height: 100%;
     }
+
+    @media screen and (max-width: @max-width) {
+      .blast {
+        width: 100%;
+      }
+
+      .sky, .launch {
+        display: none;
+      }
+    }
   }
 
   .visit-planets {
@@ -62,6 +72,15 @@
       }
       .btn:hover {
         .private-btn(white; @header-font-color);
+      }
+
+      @media screen and (max-width: @max-width) {
+        .btn {
+          .private-btn(@header-font-color, white, 100%);
+        }
+        .btn:hover {
+          .private-btn(white; @header-font-color, 100%);
+        }
       }
     }
 

@@ -19,7 +19,7 @@
     text-align: center;
 }
 
-.private-btn(@button-color: blue; @button-text-color: white) {
+.private-btn(@button-color: blue; @button-text-color: white; @max-btn-width: 33%) {
     //allow for button color and text color to be set
     //I'm just hard-coding the rest of the values to be "quick-and-dirty"
     //but, in a big project with lots of code re-use, 
@@ -33,5 +33,5 @@
     font-weight: bold;
     margin: 4px 2px;
     border-radius: 12px;
-    max-width: 33%;
+    max-width: @max-btn-width; //gonna set this as passed param now that I see mobile styling is thus easer
 }
