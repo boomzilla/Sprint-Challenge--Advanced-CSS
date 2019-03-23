@@ -334,8 +334,10 @@ footer {
   width: 46%;
   margin-left: 4%;
 }
-.home .walk .walk-img "max-width: 500px" {
-  display: none;
+@media screen and (max-width: 500px) {
+  .home .walk .walk-img {
+    display: none;
+  }
 }
 .home .walk .walk-img img {
   width: 100%;
