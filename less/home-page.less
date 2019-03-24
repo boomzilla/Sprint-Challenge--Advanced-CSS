@@ -108,7 +108,10 @@
       width: 46%;
       margin-left: 4%;
 
-      @media screen and (max-width: @max-width) {
+      //@media screen and (max-width: @max-width) {
+      //  display: none;  //if it is in mobile, we want it to display on other side of a chunck of text
+      //}
+      @media (e(@phone)) {
         display: none;  //if it is in mobile, we want it to display on other side of a chunck of text
       }
       
