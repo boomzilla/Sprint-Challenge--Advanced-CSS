@@ -26,7 +26,8 @@
 // Mobile var
 
 @max-width: 500px;
-@phone: "max-width: @{max-width}";
+//@phone: ("max-width: @{max-width}");
+@phone: e("screen and (max-width: @{max-width})");
 
 //@max-width: 500px;
 //@phone: @media screen and (max-width 500px);
