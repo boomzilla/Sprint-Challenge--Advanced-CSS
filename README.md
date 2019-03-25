@@ -50,9 +50,17 @@ for mobile-first, design most of your CSS for a smalls screen, then add exceptio
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+It sets the scaling in such a way that 1 REM is equivalent to 10px.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+They are pieces of code, and infrastructre, that write CSS for us. 
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+I like that preprocessing allows (IMO) "clearner", more readable code. For instance, it is convenient to have a "variables" section where the variables are assigned names. (The opposite of this, for instance, would be "magic numbers", code like "float falling_speed = 9.8 * seconds" (for better, more maintainable/readable code, it should be something like: "float falling_speed = acceleration_constant * seconds"))
+
+Part of the issue, however, is that preprocessing seems best suited for larger projects: the quick/easy way would be to simply write CSS code by just writing out, manually, on the CSS stylesheet file. And, of course, for any website I have worked on (almost all just small personal websites), they are obviously not at all "big websites".
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
