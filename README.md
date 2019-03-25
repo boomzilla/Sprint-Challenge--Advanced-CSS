@@ -34,13 +34,33 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+Adaptive aims to make good-looking websites at a few specific screen sizes. Responsive sites attempt to look good across an arbitrary range of screen sizes. For instance, an adaptive site might hard-code for two resolutions (say, 1200 px and 500 px). It would use media query, and set "width" property to one of two fixed, px resolutions. A responsive site would *also* use media queries, but it'd be more for e.g. "should this site display dual collumns, or a single collumn?" The responsive site will try to look good for any arbitrarilu-sized screen.
+
+Anyway, I was googling for this, and found a really good animated gif that captures "adaptive looks good across a few, hard-coded, resolutions" versus "responsive looks good across any arbitrary resolution": https://fredericgonzalo.com/wp-content/uploads/2017/02/3038367-inline-i-1-9-gifs-that-explain-responsive-design-brilliantly-01responsive-vs-adaptive-copy.gif 
+
+( Animated gif from: https://fredericgonzalo.com/en/2017/03/01/understanding-the-difference-between-mobile-first-adaptive-and-responsive-design/ )
+
 2. Describe what it means to be mobile first vs desktop first.
+
+At a "high level", it is simply thinking "Should the 'default'/primary thinking about this website design assume I should focus on the desktop layout, or the mobile layout?" 
+
+Into the nitty-gritty: 
+for desktop-first, design most of your CSS for a big screen, then add exceptions for when the resolution is small.
+for mobile-first, design most of your CSS for a smalls screen, then add exceptions for when the resolution is big.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+It sets the scaling in such a way that 1 REM is equivalent to 10px.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+They are pieces of code, and infrastructre, that write CSS for us. 
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+I like that preprocessing allows (IMO) "clearner", more readable code. For instance, it is convenient to have a "variables" section where the variables are assigned names. (The opposite of this, for instance, would be "magic numbers", code like "float falling_speed = 9.8 * seconds" (for better, more maintainable/readable code, it should be something like: "float falling_speed = acceleration_constant * seconds"))
+
+Part of the issue, however, is that preprocessing seems best suited for larger projects: the quick/easy way would be to simply write CSS code by just writing out, manually, on the CSS stylesheet file. And, of course, for any website I have worked on (almost all just small personal websites), they are obviously not at all "big websites".
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 

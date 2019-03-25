@@ -1,1 +1,37 @@
 // Mixins Here
+
+.generic-text {
+    font-size: 1.6rem;
+    line-height: 1.4;
+}
+
+.nav-anchor-text {
+    .generic-text();
+    text-decoration: none;
+    color: @main-font-color;
+    margin: 15px;
+}
+
+.nav-styling {
+    max-width: 800px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.private-btn(@button-color: blue; @button-text-color: white; @max-btn-width: 33%) {
+    //allow for button color and text color to be set
+    //I'm just hard-coding the rest of the values to be "quick-and-dirty"
+    //but, in a big project with lots of code re-use, 
+    //it could be helpful to even allow stuff like size of button, size of font, etc, to be set by passing params 
+    color: @button-text-color;
+    background-color: @button-color;
+    text-align: center;
+    padding: 10px;
+    //font-size: 20px
+    .generic-text();
+    font-weight: bold;
+    margin: 4px 2px;
+    border-radius: 12px;
+    max-width: @max-btn-width; //gonna set this as passed param now that I see mobile styling is thus easer
+}
